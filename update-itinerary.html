@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create/Update Itinerary</title>
+    <link rel="stylesheet" href="update-itinerary.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Adventure Awaits</div>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="history.back(); return false;">Back</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Itinerary Form</h2>
+        <form id="itineraryForm">
+            <input type="text" id="countryName" placeholder="Country Name" disabled="false">
+            <input type="text" id="region" placeholder="Region" disabled="false">
+            <input type="text" id="continent" placeholder="Continent" disabled="false">
+            <input type="text" id="capital" placeholder="Capital City" disabled="false">
+            <input type="text" id="currency" placeholder="Currency" disabled="false">
+            <input type="text" id="nearbyCountries" placeholder="Nearby Countries" disabled="false">
+            <input type="date" id="startDate" required>
+            <input type="date" id="endDate" required>
+            <select id="status">
+                <option value="Planned">Planned</option>
+                <option value="Completed">Completed</option>
+            </select>
+            <textarea id="notes" placeholder="Notes"></textarea>
+            <textarea id="activities" placeholder="Activities"></textarea>
+            <input type="text" id="fileName" placeholder="File Name" disabled="false">
+            <button type="submit">Save Itinerary</button>
+        </form>
+    </main>
+    <script src="update-itinerary.js"></script>
+</body>
+</html>

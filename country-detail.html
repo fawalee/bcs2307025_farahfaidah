@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country Details - World Explorer</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="country-detail.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">Adventure Awaits</div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="#region">Region</a>
+              <div class="dropdown-content">
+                <a href="asia.html">Asia</a>
+                <a href="europe.html">Europe</a>
+                <a href="africa.html">Africa</a>
+                <a href="oceania.html">Oceania</a>
+                <a href="americas.html">Americas</a>
+              </div>
+            </li>
+            <li><a href="all-regions.html">Country</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+      </header>
+    
+      <!-- Right-side menu panel -->
+      <div class="menu-panel" id="menuPanel">
+        <button class="close-button" onclick="toggleMenu()">Close</button>
+        <button class="menu-button"><a href="dreams-itineraries.html" class="menu-button">Dream Itineraries</a></button>
+      </div>
+  <main>
+    <div id="country-details" style="margin-top: 20px; display: flex;">
+        <div class="left-box">
+            <h3><span id="countryNameHeader"></span> Details of Your Dream Destination</h3>
+            <div class="image-container">
+              <div class="flag-coa">
+                <div class="flag">
+                  <p><b>Country Flag</b></p>
+                  <img id="flag" width="150" alt="Country flag">
+                </div>
+                <div class="coat-of-arms">
+                  <p><b>Coat of Arms</b></p>
+                  <img id="coa" width="150" alt="Coat of Arms">
+                </div>
+              </div>
+            </div>
+            <h1>Discover <span id="countryName"></span>: Your Dream Destination Awaits!</h1>
+            <p>
+                Nestled in the heart of <span id="continent"></span>, specifically in the <span id="region"></span> and the <span id="subregion"></span>,
+                <span id="countryName"></span> beckons travelers with its vibrant culture and breathtaking landscapes. The capital city, <span id="capitalCity"></span>, is a picturesque harbor town where the azure waters meet lush green hills.
+                Here, the currency flows in <span id="currency"></span>, and the friendly locals converse in <span id="languages"></span>, creating a warm and inviting atmosphere. As you explore this enchanting country, you'll find yourself in the <span id="timezone"></span>
+                time zone, where time seems to stand still amidst the beauty of nature.
+            </p>
+            <p>
+                Covering an area of <span id="area"></span> km², <span id="countryName"></span> is home to a close-knit population of <span id="population"></span>, each contributing to the rich tapestry of its heritage. 
+                With nearby countries to distract from its charm, <span id="countryName"></span> offers a unique escape into its tropical paradise. From the iconic flag waving in the gentle breeze to the majestic coat of arms, every detail of this country reflects its spirit. Are you ready to make <span id="countryName"></span>
+                your dream destination? Let's add it to your itinerary now and start planning the adventure of a lifetime!
+            </p>
+          </div>
+
+        <div class="right-box">
+            <p><b>Country Map</b></p>
+            <p>Located in </p>
+            <p><span id="location"></span></p>
+            <div id="map" style="width: 100%; height: 300px;"></div> <!-- Adjusted width for the map -->
+            <p>Based on the map displayed, it shows us the nearby countries that we can visit as shown below:</p>
+            <ul id="countryList"></ul>
+        </div>
+    </div>
+</main>
+
+  
+<div style="margin-top: 20px; text-align: center;">
+  <div class="dream">
+    <h3 class="itinerary-title">Your Dream Country? Let's Add Them to Your Itinerary Now!</h3>
+  </div>
+  <a href="create-itinerary.html?name=" id="createItineraryButton" class="btn create-itinerary">Create Destination Planner</a>
+  <br><br>
+</div>
+
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="country-detail.js"></script>
+</body>
+</html>

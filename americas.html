@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Americas - Adventure Awaits</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="regions.css">
+  <style>
+
+  </style>
+</head>
+<body data-region="Americas">
+    <div class="container">
+        <div class="navbar">
+            <a href="index.html"><img src="logo1.png" class="logo"></a>
+            <nav>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li class="dropdown">
+                    <a href="#region">Region</a>
+                    <div class="dropdown-content">
+                      <a href="asia.html">Asia</a>
+                      <a href="europe.html">Europe</a>
+                      <a href="africa.html">Africa</a>
+                      <a href="oceania.html">Oceania</a>
+                      <a href="americas.html">Americas</a>
+                    </div>
+                  </li>
+                  <li><a href="all-regions.html">Country</a></li>
+                  <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        </div>
+        <div class="greeting">
+            <h2>Venture into the Americas</h2>
+            <p>Journey across the Americas, from the snow-capped Rockies to the vibrant rhythms of Latin America. Discover breathtaking landscapes, rich histories, and cultures that pulse with life.</p>  
+        </div>
+      
+        <main>
+          <div class="carousel" id="country-carousel">
+            <!-- Country cards will be injected here -->
+          </div>
+          <div class="carousel-controls">
+            <button id="prev" class="carousel-button">←</button>
+            <button id="next" class="carousel-button">→</button>
+          </div>
+        </main>
+    </div>
+
+  <!-- Right-side menu panel -->
+  <div class="menu-panel" id="menuPanel">
+    <button class="close-button" onclick="toggleMenu()">Close</button>
+    <a href="dreams-itineraries.html" class="menu-button">Dream Itineraries</a>
+  </div>
+  
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="americas.js"></script>
+  </body>
+</html>

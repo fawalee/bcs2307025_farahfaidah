@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Itinerary - World Explorer</title>
+  <link rel="stylesheet" href="create-itinerary.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">Adventure Awaits</div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="#region">Region</a>
+              <div class="dropdown-content">
+                <a href="asia.html">Asia</a>
+                <a href="europe.html">Europe</a>
+                <a href="africa.html">Africa</a>
+                <a href="oceania.html">Oceania</a>
+                <a href="americas.html">Americas</a>
+              </div>
+            </li>
+            <li><a href="all-regions.html">Country</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+      </header>
+<!-- Right-side menu panel -->
+<div class="menu-panel" id="menuPanel">
+  <button class="close-button" onclick="toggleMenu()">Close</button>
+  <button class="menu-button"><a href="dreams-itineraries.html" class="menu-button">Dream Itineraries</a></button>
+</div>
+  <main>
+    <h2>Create Your Itinerary</h2>
+    <form id="itineraryForm">
+      <label for="countryName">Country Name:</label>
+      <input type="text" id="countryName" name="countryName" disabled="false">
+
+      <label for="region">Region:</label>
+      <input type="text" id="region" name="region" disabled="false">
+
+      <label for="continent">Continent:</label>
+      <input type="text" id="continent" name="continent" disabled="false">
+
+      <label for="capital">Capital City:</label>
+      <input type="text" id="capital" name="capital" disabled="false">
+
+      <label for="currency">Currency:</label>
+      <input type="text" id="currency" name="currency" disabled="false">
+
+      <label for="nearbyCountries">Nearby Countries:</label>
+      <textarea id="nearbyCountries" name="nearbyCountries" disabled="false"></textarea>
+
+      <label for="startDate">Start Date:</label>
+      <input type="date" id="startDate" name="startDate" required>
+
+      <label for="endDate">End Date:</label>
+      <input type="date" id="endDate" name="endDate" required>
+
+      <label for="status">Status:</label>
+      <select id="status" name="status" required>
+        <option value="Planned">Planned</option>
+        <option value="Completed">Completed</option>
+      </select>
+
+      <label for="notes">Notes:</label>
+      <textarea id="notes" name="notes" required></textarea>
+
+      <label for="activities">Activities:</label>
+      <textarea id="activities" name="activities" required></textarea>
+
+      <label for="fileName">File Name:</label>
+      <input type="text" id="fileName" name="fileName" required>
+
+      <button type="submit">Create Itinerary</button>
+    </form>
+  </main>
+
+  <script src="create-itinerary.js"></script>
+</body>
+</html>

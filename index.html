@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Awaits</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  </head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="index.html"><img src="logo1.png" class="logo"></a>
+            <nav>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li class="dropdown">
+                    <a href="#region">Region</a>
+                    <div class="dropdown-content">
+                      <a href="asia.html">Asia</a>
+                      <a href="europe.html">Europe</a>
+                      <a href="africa.html">Africa</a>
+                      <a href="oceania.html">Oceania</a>
+                      <a href="americas.html">Americas</a>
+                    </div>
+                  </li>
+                  <li><a href="all-regions.html">Country</a></li>
+                  <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h1>Welcome to Adventure Awaits Platform !</h1>
+                <br>
+                <p>Discover the world at your fingertips. Adventure Awaits is crafted to help you plan your dream journeys, with all the essential information from intriguing facts and culture to nearby destinations worth exploring. Start your adventure, create personalized itineraries, and let us be your ultimate travel companion!</p>
+                <button type="button"><a href="all-regions.html">Explore Now</a></button>
+            </div>
+            <div class="col">
+                <div class="card card1">
+                    <h5>Egypt</h5>
+                    <p>Pyramid of Giza</p>
+                </div>
+                <div class="card card2">
+                    <h5>Malaysia</h5>
+                    <p>KLCC Tower</p>
+                </div>
+                <div class="card card3">
+                    <h5>London</h5>
+                    <p>Clock Tower</p>
+                </div>
+                <div class="card card4">
+                    <h5>Istanbul</h5>
+                    <p>Hagia Sophia</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Right-side menu panel -->
+    <div class="menu-panel" id="menuPanel">
+        <button class="close-button" onclick="toggleMenu()">Close</button>
+        <button><a href="dreams-itineraries.html" class="menu-button">Dream Itineraries</a></button>
+    </div>
+
+    <script src="main.js">
+        
+      </script>
+</body>
+</html>

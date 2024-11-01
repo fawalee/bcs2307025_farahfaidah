@@ -1,0 +1,165 @@
+        /* General Styles */
+        body {
+            font-family: '', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("semua.jpeg");
+            color: #333;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #007BFF;
+            margin-bottom: 20px;
+        }
+        .itinerary {
+            padding: 15px;
+            margin-bottom: 15px;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .itinerary h3 {
+            margin: 0;
+            color: #0056b3;
+        }
+        .itinerary button {
+            background: #007BFF;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin-right: 5px;
+        }
+        .itinerary button:hover {
+            background: #0056b3;
+        }
+
+  /* Header styles */
+  header {
+    display: flex;
+    justify-content: center; /* Center the navigation links */
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    position: relative; /* Allows absolute positioning of logo */
+  }
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    left: 20px; /* Position the logo on the left */
+  }
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  nav a:hover {
+    color: #ffdd57;
+  }
+  /* Dropdown menu */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown-content a {
+    color: white;
+    padding: 8px 16px;
+    display: block;
+    text-decoration: none;
+  }
+  .dropdown-content a:hover {
+    background-color: #555;
+  }
+  .menu-icon {
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px; /* Position the icon on the right */
+  }
+  .menu-icon:hover {
+    color: #ffdd57;
+  }
+  
+  /* Right-side menu panel */
+  .menu-panel {
+    position: fixed;
+    right: -220px; /* Reduce width */
+    top: 0;
+    width: 200px; /* Adjusted width to make it smaller */
+    height: auto; /* Adjust height based on content */
+    background-color: #444;
+    color: #fff;
+    transition: right 0.3s ease;
+    padding: 20px 10px; /* Reduce padding */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  /* Close button styling */
+  .close-button {
+    padding: 8px; /* Smaller button padding */
+    font-size: 14px; /* Smaller font size */
+  }
+  
+  /* Class to show the menu */
+  .menu-panel.open {
+    right: 0; /* Slide in the menu */
+  }
+  .menu-button {
+    background-color: #575757;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+    text-decoration: none;
+
+  }
+  
+  .menu-button:hover {
+    background-color: #777;
+  }
+  
+  /* Close button styling */
+  .close-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  .close-button:hover {
+    background-color: #c0392b;
+  }

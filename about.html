@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - World Explorer</title>
+  <link rel="stylesheet" href="about.css">
+</head>
+
+<body>
+  <!-- Header with navigation -->
+  <header>
+    <a href="index.html"><img src="logo1.png" class="logo"></a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#region">Region</a>
+          <div class="dropdown-content">
+            <a href="asia.html">Asia</a>
+            <a href="europe.html">Europe</a>
+            <a href="africa.html">Africa</a>
+            <a href="oceania.html">Oceania</a>
+            <a href="americas.html">Americas</a>
+          </div>
+        </li>
+        <li><a href="all-regions.html">Country</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <!-- Right-side menu panel -->
+  <div class="menu-panel" id="menuPanel">
+    <button class="close-button" onclick="toggleMenu()">Close</button>
+    <button class="menu-button"><a href="dreams-itineraries.html" class="menu-button">Dream Itineraries</a></button>
+  </div>
+
+  <section class="contact">
+    <div class="contact2">
+        <div class="title">
+            <h2>CONTACT US</h2>
+        </div>
+        <p>Welcome to our Adventure Awaits platform! Explore all regions stunning coastline with our exciting Discover World information. Make your itineraries today and experience the thrill of a lifetime. Have questions or need assistance? We're here to help! Contact us now at:</p>
+    </div>
+    <div class="container">
+        <div class="contactInfo">
+            <div class="box">
+                <div class="icon"><img src="gps.png"></div>
+                <div class="text">
+                    <h3>Address</h3>
+                    <p>Jalan 3A/5, Beranang, Semenyih, Selangor.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon"><img src="phone-call.png"></div>
+                <div class="text">
+                    <h3>Phone</h3>
+                    <p>+60125674321</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon"><img src="email.png"></div>
+                <div class="text">
+                    <h3>Email</h3>
+                    <p>adventureawaits@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="contactForm">
+            <form>
+                <p>We'd love to hear from you! Please fill out the form below to get in touch with us.</p>
+                <h2>Send Message</h2>
+                <div class="inputBox">
+                    <input type="text" name="name" required="required">
+                    <span>Full Name</span>
+                </div>
+                <div class="inputBox">
+                    <input type="text" name="email" required="required">
+                    <span>Email</span>
+                </div>
+                <div class="inputBox">
+                    <textarea required="required"></textarea>
+                    <span>Type your Message...</span>
+                </div>
+                <div class="inputBox">
+                    <input type="submit" name="" value="Send">
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+  <script src="about.js"></script>
+</body>
+</html>
