@@ -57,3 +57,30 @@
         button:hover {
             background: #0056b3;
         }
+  header {
+    display: flex;
+    justify-content: center; /* Center the navigation links */
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    position: relative; /* Allows absolute positioning of logo */
+  }
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    left: 20px; /* Position the logo on the left */
+  }
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  nav a:hover {
+    color: #ffdd57;
+  }
